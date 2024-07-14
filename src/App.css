@@ -1,0 +1,28 @@
+.homeblock{
+    background-image: url(../public/home-bg-img2.png);
+}
+.home__top_block{
+    background-image: url(../public/home-bg-img.png);
+}
+.Home__about_block::before{
+    content: "";
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 101px;
+    height: 101px;
+    background-size: cover;
+    background-image: url(../public/home-before-img1.png);
+    position: absolute;
+    left: 0;
+}
+.Home__about_block2::before{
+    content: "";
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 101px;
+    height: 101px;
+    background-size: cover;
+    background-image: url(../public/home-before-img2.png);
+    position: absolute;
+    left: 0;
+}
