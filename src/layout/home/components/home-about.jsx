@@ -13,7 +13,7 @@ export const HomeAbout = () => {
 
   return (
     <>
-      <div className="bg-aboutbg bg-cover bg-center">
+      <div className="bg-homeaboutbg bg-cover bg-center">
         {HomeAboutData.map((item) => (
           <div key={item.id} className="container flex justify-end ">
             <div className=" text-start max-w-[702px] pt-[86px] pb-[186px]">

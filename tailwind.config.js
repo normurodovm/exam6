@@ -5,7 +5,7 @@ export default {
       backgroundImage: {
         'farming': "url('/feedback-bg.png')",
         'topbg': "url('/home-bg-img.png')",
-        'aboutbg': "url('/home-bg-img2.png')",
+        'homeaboutbg': "url('/home-bg-img2.png')",
         'shopbg': "url('/hero-shop-bg.png')",
         'formbg': "url('/inputs-bg.png')",
         'aboutbg': "url('/about-bg.png')",
