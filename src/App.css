@@ -1,9 +1,9 @@
-.homeblock{
+/* .homeblock{
     background-image: url(../public/home-bg-img2.png);
 }
 .home__top_block{
     background-image: url(../public/home-bg-img.png);
-}
+} */
 .Home__about_block::before{
     content: "";
     background-repeat: no-repeat;

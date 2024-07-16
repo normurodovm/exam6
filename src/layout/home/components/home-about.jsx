@@ -1,12 +1,21 @@
 import React from "react";
 import { HomeAboutData } from "../data/home-about-data";
 import { HomeAboutIcon } from "./home-about-icon1";
+import { useNavigate } from "react-router-dom";
+
 export const HomeAbout = () => {
+  const navigate = useNavigate();
+
+  const handleShopNowClick = () => {
+    navigate('/shop'); 
+  };
+
+
   return (
     <>
-      <div className="homeblock bg-contain bg-center h-screen">
+      <div className="bg-aboutbg bg-cover bg-center">
         {HomeAboutData.map((item) => (
-          <div className="container flex justify-end ">
+          <div key={item.id} className="container flex justify-end ">
             <div className=" text-start max-w-[702px] pt-[86px] pb-[186px]">
               <h1 className="font-normal text-3xl text-[#7eb693] font-[yellowtail]">
                 {item.title}
@@ -25,7 +34,7 @@ export const HomeAbout = () => {
                 <h2 className="font-extrabold text-[25px] text-[#274c5b] mb-[7px]">{item.smalltitle2}</h2>
                 <p className="font-normal text-[18px] leading-[1.65] text-[#525c60] max-w-[444px]">{item.smalltext2}</p>
               </div>
-              <button className="flex items-center px-6 py-3 text-white bg-[#274c5b] rounded-lg mt-[46px]">
+              <button onClick={handleShopNowClick} className="flex items-center px-6 py-3 text-white bg-[#274c5b] rounded-lg mt-[46px]">
                 Shop Now
                 <HomeAboutIcon />
               </button>
